@@ -1,0 +1,6 @@
+
+E
+java:S1481"(Remove this unused "g2d" local variable.(½ñ­â8“äµ«â.
+T
+java:S1854"7Remove this useless assignment to local variable "g2d".(½ñ­â8“äµ«â.
+X	java:S125"<This block of commented-out lines of code should be removed.(Ø‚˜û8“äµ«â.
