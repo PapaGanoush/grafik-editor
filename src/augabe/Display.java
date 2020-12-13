@@ -23,6 +23,7 @@ import formen.*;
 public class Display extends JFrame {
   /** Die Liste der dargestellten Figur-Objekte */
   private List<Figur> figuren = new ArrayList<>();
+  Zeichnung zeichnung;
 
   /**
    * Konstruktor. Initialisiert das Fenster in der Mitte des Bildschirms und erzeugt ein
@@ -41,6 +42,10 @@ public class Display extends JFrame {
     setVisible(true);
   }
 
+  public void setZeichnung(Zeichnung zeichnung) {
+    this.zeichnung = zeichnung;
+  }
+
   private void createAndAddDrawingPanel() {
     // Das JPanel-Objekt ist ein Objekt einer anonymen Unterklasse von JPanel
     // Siehe Java-Grundkurs Abschnitt 3.9
@@ -50,35 +55,10 @@ public class Display extends JFrame {
       @Override
       protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        zeichneFiguren(g);
+        zeichnung.zeichneFiguren(g);
       }
     });
   }
 
-  /**
-   * Zeichnet alle Figuren.
-   * @param g Referenz auf das Graphics-Objekt zum zeichnen.
-   */
-  private void zeichneFiguren(Graphics g) {
-    for (Figur f : figuren) {
-      f.zeichne(g);
-    }
-  }
-
-  /**
-   * F�gt eine weitere Figur hinzu und l�st die Auffrischung des Fensterinhaltes aus.
-   * @param figur Referenz auf das weitere Figur-Objekt.
-   */
-  public void hinzufuegen(Figur figur) {
-    figuren.add(figur);
-    repaint();
-  }
-
-  /**
-   * L�scht alle Figuren und l�st die Auffrischung des Fensterinhaltes aus.
-   */
-  public void allesLoeschen() {
-    figuren.clear();
-    repaint();
-  }
 }
+

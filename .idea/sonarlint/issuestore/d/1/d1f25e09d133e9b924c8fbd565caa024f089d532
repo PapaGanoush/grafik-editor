@@ -1,6 +1,8 @@
 
 V	java:S110"<This class has 6 parents which is greater than 5 authorized.(ßÕÿÿÿÿÿ
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(â²Ëìşÿÿÿÿ
+M
+java:S1948"+Make "zeichnung" transient or serializable.(ì€Šøÿÿÿÿ8±®·áä.
 K
-java:S1948")Make "figuren" transient or serializable.(â²Ëìşÿÿÿÿ8Äá¬â.
+java:S1948")Make "figuren" transient or serializable.(›ı›öşÿÿÿÿ8Äá¬â.
+M
+java:S1068"+Remove this unused "figuren" private field.(›ı›öşÿÿÿÿ8ë³áä.

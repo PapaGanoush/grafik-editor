@@ -15,11 +15,14 @@ public class Kreis extends Figur {
     @Override
     public void zeichne(Graphics g) {
         if(istGefuellt) {
-            Graphics2D g2d = (Graphics2D) g;
-            g2d.fillOval(super.x, super.y, radius, radius);
-            //g.fillOval(super.x, super.y, radius, radius);
+            g.fillOval(super.x, super.y, radius, radius);
         } else {
             g.drawOval(super.x, super.y, radius, radius);
         }
+    }
+
+    @Override
+    public void vergroessere(int anzahlPixel) {
+        radius += anzahlPixel;
     }
 }
