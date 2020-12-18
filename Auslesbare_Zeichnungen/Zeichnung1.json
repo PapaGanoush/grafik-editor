@@ -1,0 +1,52 @@
+[
+    {
+      "formTyp": "Kreis",
+      "positionX": 130,
+      "positionY": 170,
+      "radius": 40,
+      "istGefuellt": true
+    },
+
+    {
+      "formTyp": "Kreis",
+      "positionX": 130,
+      "positionY": 270,
+      "radius": 60,
+      "istGefuellt": false
+    },
+
+    {
+      "formTyp": "Linie",
+      "positionX": 220,
+      "positionY": 450,
+      "endX": 250,
+      "endY": 280
+    },
+
+    {
+      "formTyp": "Rechteck",
+      "positionX": 300,
+      "positionY": 110,
+      "breite": 100,
+      "hoehe": 200,
+      "istGefuellt": true
+    },
+
+    {
+      "formTyp": "Rechteck",
+      "positionX": 500,
+      "positionY": 260,
+      "breite": 100,
+      "hoehe": 200,
+      "istGefuellt": false
+    },
+
+    {
+      "formTyp": "Text",
+      "positionX": 100,
+      "positionY": 100,
+      "text": "Tylko jedno w głowie mam oksu pięć gram odlecieć sam krainę zapomnienia"
+
+    }
+]
+

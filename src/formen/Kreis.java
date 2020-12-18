@@ -25,4 +25,5 @@ public class Kreis extends Figur {
     public void vergroessere(int anzahlPixel) {
         radius += anzahlPixel;
     }
+
 }

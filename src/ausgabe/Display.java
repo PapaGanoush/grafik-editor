@@ -1,4 +1,4 @@
-package augabe;
+package ausgabe;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

@@ -24,4 +24,5 @@ public class Text extends Figur {
         super.vergroessere(anzahlPixel);
         schriftgroesse += anzahlPixel;
     }
+
 }

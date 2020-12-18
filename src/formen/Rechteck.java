@@ -29,4 +29,5 @@ public class Rechteck extends Figur {
         breite += anzahlPixel;
         hoehe += anzahlPixel;
     }
+
 }

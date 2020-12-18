@@ -30,4 +30,5 @@ public class Linie extends Figur {
         endX += anzahlPixel;
         endY += anzahlPixel;
     }
+
 }

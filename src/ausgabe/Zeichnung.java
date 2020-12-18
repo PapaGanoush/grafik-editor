@@ -1,4 +1,4 @@
-package augabe;
+package ausgabe;
 
 import formen.Figur;
 
@@ -18,7 +18,6 @@ public class Zeichnung extends JFrame {
         for (Figur f : figuren) {
             f.zeichne(g);
         }
-        repaint();
     }
 
     public void hinzufuegen(Figur f) {

@@ -1,8 +1,6 @@
 
 E
 src/formen/Linie.java,7\0\70ce8b1d5b2120828d579e9b606bcbd20dd301ab
-G
-src/augabe/Display.java,d\1\d1f25e09d133e9b924c8fbd565caa024f089d532
 E
 src/formen/Kreis.java,3\8\38ca37b2a2c2d93d272e568e2368d14aa9bb7b33
 =
@@ -13,5 +11,13 @@ H
 src/formen/Rechteck.java,3\5\3543ae3176cf30318a29009628746ad6d526b1d9
 E
 src/formen/Figur.java,0\f\0f5097545db4660ec998737142460ffb0eac30c5
-I
-src/augabe/Zeichnung.java,2\e\2ecedb82f611a131b85dff1a3a94106e924e8449
+H
+src/ausgabe/Display.java,9\3\93b72276d7339ffb2bf61ddacf6452396a1b2bea
+V
+&src/speichernundladen/FigurLoader.java,9\b\9bc9ae226f2b02b8dbd448ede06845b6258055e1
+U
+%src/speichernundladen/FigurSaver.java,a\f\af8210eaf629c7ff6b19914263514af02eed3ed9
+J
+src/ausgabe/Zeichnung.java,d\5\d518e2f85322d710f89394021ef4e9cef3c7c05d
+V
+&Auslesbare_Zeichnungen/Zeichnung1.json,c\4\c4ce36ed31d9b4910a17dd854e6d24d36c741dc8
