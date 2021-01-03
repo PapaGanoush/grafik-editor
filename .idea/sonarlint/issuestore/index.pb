@@ -21,3 +21,7 @@ J
 src/ausgabe/Zeichnung.java,d\5\d518e2f85322d710f89394021ef4e9cef3c7c05d
 V
 &Auslesbare_Zeichnungen/Zeichnung1.json,c\4\c4ce36ed31d9b4910a17dd854e6d24d36c741dc8
+A
+Grafik_Editor.iml,f\2\f2c9dbf3faf9d83c9763bfcd0a912ed2051c1db1
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

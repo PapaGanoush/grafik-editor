@@ -38,12 +38,12 @@ public class Display extends JFrame {
     Point windowPosition = new Point(windowPositionX, windowPositionY);
     setLocation(windowPosition);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
-    createAndAddDrawingPanel();
     setVisible(true);
   }
 
   public void setZeichnung(Zeichnung zeichnung) {
     this.zeichnung = zeichnung;
+    createAndAddDrawingPanel();
   }
 
   private void createAndAddDrawingPanel() {

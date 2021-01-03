@@ -15,12 +15,8 @@ public class Main {
     public static void main(String[] args) throws IOException, ParseException {
         Zeichnung z = new Zeichnung();
         FigurLoader f = new FigurLoader();
-
-        List<Figur> figuren = f.erhalteFiguren();
-
-        for (Figur figur : figuren) {
-            z.hinzufuegen(figur);
-        }
+        f.leseFigurenAus();
+        z.figuren = f.erhalteFiguren();
 
         /*
         Kreis k1 = new Kreis(130, 170, 40, true);

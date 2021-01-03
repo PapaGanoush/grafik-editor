@@ -8,11 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zeichnung extends JFrame {
-    public List<Figur> figuren;
+    public List<Figur> figuren = new ArrayList<>();
 
-    public Zeichnung() {
-        this.figuren = new ArrayList<>();
-    }
+    public Zeichnung() {}
 
     public void zeichneFiguren(Graphics g) {
         for (Figur f : figuren) {

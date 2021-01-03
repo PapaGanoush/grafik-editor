@@ -1,5 +1,6 @@
 package speichernundladen;
 
+import java.lang.*;
 import formen.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -8,6 +9,7 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -16,14 +18,11 @@ public class FigurLoader {
     JSONParser jsonParser = new JSONParser();
     JSONArray formenArray = (JSONArray) jsonParser.parse(new FileReader(dateiPfad));
     Iterator i = formenArray.iterator();
-    public List<Figur> figuren;
+    public List<Figur> dokumentFiguren = new ArrayList<>();
 
-    public FigurLoader() throws IOException, ParseException {
-        leseFigurenAus();
-    }
+    public FigurLoader() throws IOException, ParseException {}
 
-    private void leseFigurenAus() {
-
+    public void leseFigurenAus() {
 
         while (i.hasNext()) {
             JSONObject form = (JSONObject) i.next();
@@ -44,51 +43,50 @@ public class FigurLoader {
                     break;
             }
         }
-        JSONObject formeee = (JSONObject) formenArray.get(0);
-        System.out.println(formeee);
     }
 
     private void erstelleKreis(JSONObject form) {
-        int positionX = (int) form.get("positionX");
-        int positionY = (int) form.get("positionY");
-        int radius = (int) form.get("radius");
+        int positionX = ((Long)form.get("positionX")).intValue();
+        int positionY = ((Long)form.get("positionY")).intValue();
+        int radius = ((Long)form.get("radius")).intValue();
         boolean istGefuellt = (boolean) form.get("istGefuellt");
 
         Kreis k = new Kreis(positionX, positionY, radius, istGefuellt);
-        figuren.add(k);
+        dokumentFiguren.add(k);
     }
 
     private void erstelleLinie(JSONObject form) {
-        int positionX = (int) form.get("positionX");
-        int positionY = (int) form.get("positionY");
-        int endX = (int) form.get("endX");
-        int endY = (int) form.get("endY");
+        int positionX = ((Long)form.get("positionX")).intValue();
+        int positionY = ((Long)form.get("positionY")).intValue();
+        int endX = ((Long)form.get("endX")).intValue();
+        int endY = ((Long)form.get("endY")).intValue();
 
         Linie l = new Linie(positionX, positionY, endX, endY);
-        figuren.add(l);
+        dokumentFiguren.add(l);
     }
 
     private void erstelleRechteck(JSONObject form) {
-        int positionX = (int) form.get("positionX");
-        int positionY = (int) form.get("positionY");
-        int breite = (int) form.get("breite");
-        int hoehe = (int) form.get("hoehe");
+        int positionX = ((Long)form.get("positionX")).intValue();
+        int positionY = ((Long)form.get("positionY")).intValue();
+        int breite = ((Long)form.get("breite")).intValue();
+        int hoehe = ((Long)form.get("hoehe")).intValue();
         boolean istGefuellt = (boolean) form.get("istGefuellt");
 
         Rechteck r = new Rechteck(positionX, positionY, breite, hoehe, istGefuellt);
-        figuren.add(r);
+        dokumentFiguren.add(r);
     }
 
     private void erstelleText(JSONObject form) {
-        int positionX = (int) form.get("positionX");
-        int positionY = (int) form.get("positionY");
+        int positionX = ((Long)form.get("positionX")).intValue();
+        int positionY = ((Long)form.get("positionY")).intValue();
         String text = (String) form.get("text");
 
         Text t = new Text(positionX, positionY, text);
-        figuren.add(t);
+        dokumentFiguren.add(t);
     }
 
     public List<Figur> erhalteFiguren() {
-        return figuren;
+        System.out.println("Figuren FigurLoader: " + dokumentFiguren);
+        return dokumentFiguren;
     }
 }
