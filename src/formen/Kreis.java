@@ -26,4 +26,15 @@ public class Kreis extends Figur {
         radius += anzahlPixel;
     }
 
+    @Override
+    public String[] erhalteInformationen() {
+        String positionX = String.valueOf(super.x);
+        String positionY = String.valueOf(super.y);
+        String radius = String.valueOf(this.radius);
+        String istGefuellt = String.valueOf(this.istGefuellt);
+
+        String[] formInformationen = {"Kreis", positionX, positionY, radius, istGefuellt};
+        return  formInformationen;
+    }
+
 }

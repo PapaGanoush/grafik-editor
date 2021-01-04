@@ -1,7 +1,6 @@
 package formen;
 
 import java.awt.*;
-import java.util.List;
 
 public abstract class Figur {
     protected int x;
@@ -24,5 +23,7 @@ public abstract class Figur {
         x -= verschiebeXY;
         y -= verschiebeXY;
     }
+
+    public abstract String[] erhalteInformationen();
 
 }

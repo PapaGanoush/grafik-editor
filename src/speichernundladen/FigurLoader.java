@@ -6,7 +6,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class FigurLoader {
-    String dateiPfad = "V:\\Schule\\Modul 226-2\\Grafik Editor\\Auslesbare_Zeichnungen\\Zeichnung1.json";
+    String dateiPfad = "Gespeicherte_Zeichnungen/nQQoBUUxiDFVbfG.json";
     JSONParser jsonParser = new JSONParser();
     JSONArray formenArray = (JSONArray) jsonParser.parse(new FileReader(dateiPfad));
     Iterator i = formenArray.iterator();

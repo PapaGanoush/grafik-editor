@@ -1,0 +1,15 @@
+
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘«Òå8…« ì.
+Q
+java:S3740"/Provide the parametrized type for this generic.(À¸êúÿÿÿÿ8¦Ñëíæ.
+x
+java:S1104"[Make dokumentFiguren a static final constant or non-public and provide accessors if needed.(€ùŠã8Ìì£ ì.
+g
+java:S11920"JDefine a constant instead of duplicating this literal "positionX" 4 times.(ù‘“û8°ñòì.
+C	java:S131""Add a default case to this switch.(µ”Æ¥ıÿÿÿÿ8ë× ì.
+T	java:S106X"9Replace this use of System.out or System.err by a logger.(îÕÂ8¢¾Ê£ë.
+l
+java:S11921"JDefine a constant instead of duplicating this literal "positionY" 4 times.(¤êÿûÿÿÿÿ8¤İöì.
+s
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ãø©Æşÿÿÿÿ8˜¤ë.

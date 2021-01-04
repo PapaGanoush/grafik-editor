@@ -31,4 +31,15 @@ public class Linie extends Figur {
         endY += anzahlPixel;
     }
 
+    @Override
+    public String[] erhalteInformationen() {
+        String positionX = String.valueOf(super.x);
+        String positionY = String.valueOf(super.y);
+        String endX = String.valueOf(this.endX);
+        String endY = String.valueOf(this.endY);
+
+        String[] formInformationen = {"Linie", positionX, positionY, endX, endY};
+        return  formInformationen;
+    }
+
 }

@@ -30,4 +30,16 @@ public class Rechteck extends Figur {
         hoehe += anzahlPixel;
     }
 
+    @Override
+    public String[] erhalteInformationen() {
+        String positionX = String.valueOf(super.x);
+        String positionY = String.valueOf(super.y);
+        String breite = String.valueOf(this.breite);
+        String hoehe = String.valueOf(this.hoehe);
+        String istGefuellt = String.valueOf(this.istGefuellt);
+
+        String[] formInformationen = {"Rechteck", positionX, positionY, breite, hoehe, istGefuellt};
+        return  formInformationen;
+    }
+
 }

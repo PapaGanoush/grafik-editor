@@ -1,0 +1,12 @@
+
+D
+java:S1481"'Remove this unused "l3" local variable.(³¹‹Ö8åìÈì.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(öìó×ıÿÿÿÿ8õÍªÇì.
+S
+java:S1854"6Remove this useless assignment to local variable "l3".(³¹‹Ö8åìÈì.
+U
+java:S1068"8Remove this unused "zuSpeicherndeFiguren" private field.(Óúâã8¢ßÖÈì.
+
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ÁÚş‹úÿÿÿÿ8ÕÉÉì.
+Q
+java:S1128"/Remove this unused import 'java.io.FileWriter'.(Ã‘ÅÃıÿÿÿÿ8ÕÉÉì.
