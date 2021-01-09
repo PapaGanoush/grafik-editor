@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class FigurLoader {
-    String dateiPfad = "Gespeicherte_Zeichnungen/nQQoBUUxiDFVbfG.json";
+    String dateiPfad = "Gespeicherte_Zeichnungen/quc1hiAqNxWWUlA.json";
     JSONParser jsonParser = new JSONParser();
     JSONArray formenArray = (JSONArray) jsonParser.parse(new FileReader(dateiPfad));
     Iterator i = formenArray.iterator();
