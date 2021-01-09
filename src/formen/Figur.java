@@ -24,6 +24,4 @@ public abstract class Figur {
         y -= verschiebeXY;
     }
 
-    public abstract String[] erhalteInformationen();
-
 }

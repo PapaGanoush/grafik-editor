@@ -20,31 +20,26 @@ public class Zeichnung extends JFrame {
 
     public void hinzufuegen(Figur f) {
         figuren.add(f);
-        repaint();
     }
 
     public void loescheAlles() {
         figuren.clear();
-        repaint();
     }
 
     public void loescheFigur(Figur f) {
         figuren.remove(f);
-        repaint();
     }
 
     public void vergroessereFiguren(int anzahlPixel) {
         for (Figur f : figuren) {
             f.vergroessere(anzahlPixel);
         }
-        repaint();
     }
 
     public void bewegeFiguren(int deltaX, int deltaY) {
         for (Figur f : figuren) {
             f.move(deltaX, deltaY);
         }
-        repaint();
     }
 }
 
