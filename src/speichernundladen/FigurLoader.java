@@ -17,7 +17,7 @@ public class FigurLoader {
     JSONParser jsonParser = new JSONParser();
     JSONArray formenArray = (JSONArray) jsonParser.parse(new FileReader(dateiPfad));
     Iterator i = formenArray.iterator();
-    public List<Figur> dokumentFiguren = new ArrayList<>();
+    private List<Figur> dokumentFiguren = new ArrayList<>();
 
     public FigurLoader() throws IOException, ParseException {}
 
