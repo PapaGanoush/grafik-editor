@@ -1,4 +1,6 @@
-package ausgabe;
+package adapter;
+
+import ausgabe.EditorControl;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;

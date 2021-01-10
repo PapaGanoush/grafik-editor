@@ -1,7 +1,9 @@
 package ausgabe;
 
+import adapter.EditorKeyAdapter;
+import adapter.EditorMouseAdapter;
+
 import java.awt.Graphics;
-import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
 

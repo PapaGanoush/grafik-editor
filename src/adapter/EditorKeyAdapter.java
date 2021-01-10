@@ -1,4 +1,6 @@
-package ausgabe;
+package adapter;
+
+import ausgabe.EditorControl;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;

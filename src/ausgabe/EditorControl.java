@@ -5,7 +5,7 @@ import formen.*;
 import java.awt.Graphics;
 import java.awt.Point;
 
-final class EditorControl {
+public final class EditorControl {
   EditorFrame editorFrame;
   private Zeichnung zeichnung = new Zeichnung();
   private char figurTyp = 'r';
