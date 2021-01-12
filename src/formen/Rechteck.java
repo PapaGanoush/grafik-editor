@@ -23,11 +23,4 @@ public class Rechteck extends Figur {
         }
     }
 
-    @Override
-    public void vergroessere(int anzahlPixel) {
-        super.vergroessere(anzahlPixel);
-        breite += anzahlPixel;
-        hoehe += anzahlPixel;
-    }
-
 }

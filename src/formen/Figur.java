@@ -13,15 +13,4 @@ public abstract class Figur {
 
     public abstract void zeichne(Graphics g);
 
-    public void move(int deltaX, int deltaY) {
-        x += deltaX;
-        y += deltaY;
-    }
-
-    public void  vergroessere(int anzahlPixel) {
-        double verschiebeXY = anzahlPixel / 2;
-        x -= verschiebeXY;
-        y -= verschiebeXY;
-    }
-
 }

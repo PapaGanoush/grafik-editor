@@ -10,6 +10,7 @@ public final class EditorControl {
   private Zeichnung zeichnung = new Zeichnung();
   private char figurTyp = 'r';
   private Point ersterPunkt;
+  private Point zweiterPunkt;
   private boolean istFigurGefuellt = false;
 
   public EditorControl(EditorFrame editorFrame) {
@@ -46,20 +47,21 @@ public final class EditorControl {
   }
 
   public void erzeugeFigurMitZweitemPunkt(Point zweiterPunkt) {
+    this.zweiterPunkt = zweiterPunkt;
     switch(figurTyp) {
       case 'r':
-        erstelleRechteck(zweiterPunkt);
+        erstelleRechteck();
         break;
       case 'l':
-        erstelleLinie(zweiterPunkt);
+        erstelleLinie();
         break;
       case 'k':
-        erstelleKreis(zweiterPunkt);
+        erstelleKreis();
         break;
     }
   }
 
-  private void erstelleRechteck(Point zweiterPunkt) {
+  private void erstelleRechteck() {
     int x = Math.min(ersterPunkt.x, zweiterPunkt.x);
     int y = Math.min(ersterPunkt.y, zweiterPunkt.y);
     int breite = Math.abs(ersterPunkt.x - zweiterPunkt.x);
@@ -70,7 +72,7 @@ public final class EditorControl {
     editorFrame.repaint();
   }
 
-  private void erstelleLinie(Point zweiterPunkt) {
+  private void erstelleLinie() {
     int x = ersterPunkt.x;
     int y = ersterPunkt.y;
     int endX = zweiterPunkt.x;
@@ -81,7 +83,7 @@ public final class EditorControl {
     editorFrame.repaint();
   }
 
-  private void erstelleKreis(Point zweiterPunkt) {
+  private void erstelleKreis() {
     int x = Math.min(ersterPunkt.x, zweiterPunkt.x);
     int y = Math.min(ersterPunkt.y, zweiterPunkt.y);
     int xDifferenz = zweiterPunkt.x - ersterPunkt.x;

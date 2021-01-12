@@ -17,18 +17,4 @@ public class Linie extends Figur {
         g.drawLine(super.x, super.y, endX, endY);
     }
 
-    @Override
-    public void move(int deltaX, int deltaY) {
-        super.move(deltaX, deltaY);
-        this.endX += deltaX;;
-        this.endY += deltaY;
-    }
-
-    @Override
-    public void vergroessere(int anzahlPixel) {
-        super.vergroessere(anzahlPixel);
-        endX += anzahlPixel;
-        endY += anzahlPixel;
-    }
-
 }

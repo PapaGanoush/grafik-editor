@@ -1,9 +1,9 @@
 
-Q	java:S110
-"<This class has 6 parents which is greater than 5 authorized.(ÿ‡º
 D
 java:S1948")Make "figuren" transient or serializable.(§ôÖ­ÿÿÿÿÿ
 n
 java:S1104"SMake figuren a static final constant or non-public and provide accessors if needed.(§ôÖ­ÿÿÿÿÿ
 £
 java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(µàûÿÿÿÿ8¡ä· ì.
+Q	java:S110
+"<This class has 6 parents which is greater than 5 authorized.(ÿ‡º

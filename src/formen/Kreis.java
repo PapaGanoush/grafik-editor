@@ -21,9 +21,4 @@ public class Kreis extends Figur {
         }
     }
 
-    @Override
-    public void vergroessere(int anzahlPixel) {
-        radius += anzahlPixel;
-    }
-
 }

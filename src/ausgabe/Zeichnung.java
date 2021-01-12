@@ -8,9 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zeichnung extends JFrame {
-    public List<Figur> figuren = new ArrayList<>();
-
-    public Zeichnung() {}
+    private List<Figur> figuren = new ArrayList<>();
 
     public void zeichneFiguren(Graphics g) {
         for (Figur f : figuren) {
@@ -28,18 +26,6 @@ public class Zeichnung extends JFrame {
 
     public void loescheFigur(Figur f) {
         figuren.remove(f);
-    }
-
-    public void vergroessereFiguren(int anzahlPixel) {
-        for (Figur f : figuren) {
-            f.vergroessere(anzahlPixel);
-        }
-    }
-
-    public void bewegeFiguren(int deltaX, int deltaY) {
-        for (Figur f : figuren) {
-            f.move(deltaX, deltaY);
-        }
     }
 }
 

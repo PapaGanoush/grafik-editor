@@ -6,7 +6,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class EditorKeyAdapter extends KeyAdapter {
-    EditorControl editorControl;
+    private EditorControl editorControl;
 
     public EditorKeyAdapter(EditorControl editorControl) {
         this.editorControl = editorControl;

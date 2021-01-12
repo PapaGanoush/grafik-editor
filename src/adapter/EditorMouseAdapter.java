@@ -6,7 +6,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class EditorMouseAdapter extends MouseAdapter {
-    EditorControl editorControl;
+    private EditorControl editorControl;
 
     public EditorMouseAdapter(EditorControl editorControl) {
         this.editorControl = editorControl;
