@@ -12,6 +12,7 @@ public class Rechteck extends Figur {
         this.breite = breite;
         this.hoehe = hoehe;
         this.istGefuellt = istGefuellt;
+        gebeInfos();
     }
 
     @Override
@@ -21,6 +22,11 @@ public class Rechteck extends Figur {
         } else {
             g.drawRect(super.x, super.y, breite, hoehe);
         }
+    }
+
+    @Override
+    public String gebeInfos() {
+        return "Figurtyp: Rechteck, X: " + super.x + ", Y: " + super.y + ", Breite: " + breite + ", Hoehe: " + hoehe;
     }
 
 }

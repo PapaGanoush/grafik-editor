@@ -10,15 +10,24 @@ public class Kreis extends Figur {
         super(x, y);
         this.radius = radius;
         this.istGefuellt = istGefuellt;
+        gebeInfos();
     }
 
     @Override
     public void zeichne(Graphics g) {
+        int x = super.x-radius;
+        int y = super.y-radius;
         if(istGefuellt) {
-            g.fillOval(super.x, super.y, radius, radius);
+            g.fillOval(x, y, radius*2, radius*2);
         } else {
-            g.drawOval(super.x, super.y, radius, radius);
+            g.drawOval(x, y, radius*2, radius*2);
         }
+        System.out.println(x + " " + y + " " + radius*2);
+    }
+
+    @Override
+    public String gebeInfos() {
+        return "Figurtyp: Kreis, X: " + super.x + ", Y: " + super.y + ", Radius: " + radius;
     }
 
 }

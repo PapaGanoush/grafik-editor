@@ -1,5 +1,7 @@
 package ausgabe;
 
+import dao.FigurFileDAO;
+import dao.FigurParser;
 import formen.*;
 
 import java.awt.Graphics;
@@ -15,6 +17,11 @@ public final class EditorControl {
 
   public EditorControl(EditorFrame editorFrame) {
     this.editorFrame = editorFrame;
+    FigurFileDAO fileDAO = new FigurFileDAO();
+    FigurParser pp = new FigurParser(fileDAO);
+    zeichnung.mehrereHinzufuegen(pp.parse());
+    editorFrame.repaint();
+    fileDAO.close();
   }
 
   public void allesNeuZeichnen(Graphics g) {
@@ -84,11 +91,23 @@ public final class EditorControl {
   }
 
   private void erstelleKreis() {
-    int x = Math.min(ersterPunkt.x, zweiterPunkt.x);
-    int y = Math.min(ersterPunkt.y, zweiterPunkt.y);
-    int xDifferenz = zweiterPunkt.x - ersterPunkt.x;
-    int yDifferenz = zweiterPunkt.y - ersterPunkt.y;
+    int x;
+    int y;
+    int xDifferenz = ersterPunkt.x - zweiterPunkt.x;
+    int yDifferenz = ersterPunkt.y - zweiterPunkt.y;
     int radius = (int) Math.hypot(xDifferenz, yDifferenz);
+
+    if(ersterPunkt.x > zweiterPunkt.x) {
+      x = zweiterPunkt.x + radius;
+    } else {
+      x = ersterPunkt.x;
+    }
+
+    if(ersterPunkt.y > zweiterPunkt.y) {
+      y = zweiterPunkt.y + radius;
+    } else {
+      y = ersterPunkt.y;
+    }
 
     Kreis k = new Kreis(x, y, radius, istFigurGefuellt);
     zeichnung.hinzufuegen(k);

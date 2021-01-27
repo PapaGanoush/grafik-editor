@@ -13,4 +13,6 @@ public abstract class Figur {
 
     public abstract void zeichne(Graphics g);
 
+    public abstract String gebeInfos();
+
 }

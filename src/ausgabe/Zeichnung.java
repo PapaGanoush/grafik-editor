@@ -20,6 +20,12 @@ public class Zeichnung extends JFrame {
         figuren.add(f);
     }
 
+    public void mehrereHinzufuegen(List<Figur> figuren) {
+        for (Figur f : figuren) {
+            this.figuren.add(f);
+        }
+    }
+
     public void loescheAlles() {
         figuren.clear();
     }
